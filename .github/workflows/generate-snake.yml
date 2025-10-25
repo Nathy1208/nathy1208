@@ -1,0 +1,42 @@
+name: 🐍 Generate Snake Animation
+
+on:
+  workflow_dispatch:   # permite rodar manualmente
+  schedule:
+    - cron: '0 6 * * *' # roda todo dia às 06:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧩 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Generate snake animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            output/github-contribution-grid-snake.gif?color_snake=#8A2BE2&color_dots=#9370DB&color_bg=transparent
+
+      - name: 🚀 Commit and push generated snake
+        env:
+          GIT_AUTHOR_NAME: "github-actions[bot]"
+          GIT_AUTHOR_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+        run: |
+          git config --local user.name "${GIT_AUTHOR_NAME}"
+          git config --local user.email "${GIT_AUTHOR_EMAIL}"
+          mkdir -p output
+          git add output/github-contribution-grid-snake.gif || true
+          if git diff --cached --quiet; then
+            echo "✨ No changes to commit"
+          else
+            git commit -m "chore: update snake animation 🐍"
+            git push
+          fi
