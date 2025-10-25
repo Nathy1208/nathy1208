@@ -15,8 +15,9 @@
 ---
 <!-- 🐍 Snake animation -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Nathy1208/nathy1208/output/github-contribution-grid-snake.gif" alt="Snake animation" />
+  <img src="https://raw.githubusercontent.com/Nathy1208/Nathy1208/output/github-contribution-grid-snake.gif" alt="Snake animation" />
 </p>
+
 
 ---
 
