@@ -5,7 +5,7 @@
 </h1>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=1000&pause=500&color=8A2BE2&center=true&vCenter=true&width=435&lines=Nathy+💻" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2000&pause=500&color=8A2BE2&center=true&vCenter=true&width=435&lines=Nathy+💫" alt="Typing SVG" />
 </h1>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ## 🛠️ Tecnologias e Ferramentas
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=flutter,dart,angular,ts,js,nodejs,firebase,mysql,git,github,vscode,postman,figma,mongo,html,css" />
+  <img src="https://skillicons.dev/icons?i=flutter,dart,angular,ts,js,nodejs,firebase,git,github,vscode,postman,figma,mongo,html,css" />
 </p>
 
 ---
