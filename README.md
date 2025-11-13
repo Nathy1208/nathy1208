@@ -15,7 +15,7 @@
 ---
 <!-- 🐍 Snake animation -->
 <p align="center">
-![Snake animation](https://raw.githubusercontent.com/nathy1208/nathy1208/output/github-contribution-grid-snake-dark.svg)
+<img src="/output/github-contribution-grid-snake.gif" />
 </p>
 
 
